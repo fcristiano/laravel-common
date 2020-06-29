@@ -1,0 +1,21 @@
+{
+    "name": "fcristiano/laravel-common",
+    "require": {
+        "laravel/framework": "^7.1"
+    },
+
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Fcristiano\\LaravelCommon\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fcristiano\\LaravelCommon\\CommonServiceProvider"
+            ]
+        }
+    }
+}
