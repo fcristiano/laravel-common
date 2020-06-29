@@ -1,5 +1,6 @@
 {
     "name": "fcristiano/laravel-common",
+    "version": "1.2.0",
     "require": {
         "laravel/framework": "^7.1"
     },
