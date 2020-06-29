@@ -24,13 +24,13 @@ class RepositoryFactoryProvider extends ServiceProvider
     {
         $this->app->singleton(RepositoryFactory::class, function ($app) {
 
-            $repositoryConfig = Config::get('models-repos.config', null);
+            $repositoryConfig = Config::get('fclc-models-repos.config', null);
             if($repositoryConfig === null) {
-                throw new ConfigException(sprintf('models-repos config not found'));
+                throw new ConfigException(sprintf('fclc-models-repos config not found'));
             }
 
             if(!is_array($repositoryConfig)) {
-                throw new ConfigException(sprintf('models-repos config is not valid, array expected'));
+                throw new ConfigException(sprintf('fclc-models-repos config is not valid, array expected'));
             }
 
             return new RepositoryFactoryConcrete($repositoryConfig);
