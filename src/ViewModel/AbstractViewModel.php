@@ -17,7 +17,7 @@ abstract class AbstractViewModel
      * @param LengthAwarePaginator $paginator
      * @return array
      */
-    protected static function paginatorViewModel(LengthAwarePaginator $paginator)
+    protected static function paginator(LengthAwarePaginator $paginator)
     {
         return [
             'totItems'      => $paginator->total(),
