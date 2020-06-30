@@ -14,6 +14,15 @@ use Illuminate\Pagination\LengthAwarePaginator;
 abstract class AbstractViewModel
 {
     /**
+     * @param $date
+     * @return string
+     */
+    protected function date($date)
+    {
+        return $date instanceof \DateTime ? $date->format('Y-m-d H:i:s') : $date;
+    }
+
+    /**
      * @param LengthAwarePaginator $paginator
      * @return array
      */
