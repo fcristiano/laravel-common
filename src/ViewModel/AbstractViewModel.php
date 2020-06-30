@@ -6,12 +6,12 @@
  * Time: 02:09
  */
 
-namespace Fcristiano\LaravelCommon\JsonViewModel;
+namespace Fcristiano\LaravelCommon\ViewModel;
 
 
 use Illuminate\Pagination\LengthAwarePaginator;
 
-abstract class AbstractJsonViewModel
+abstract class AbstractViewModel
 {
     /**
      * @param LengthAwarePaginator $paginator
