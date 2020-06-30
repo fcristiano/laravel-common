@@ -15,7 +15,7 @@ use Fcristiano\LaravelCommon\Services\Repository\RepositoryInterface;
 class RepositoryFactoryConcrete implements RepositoryFactory
 {
     /**
-     * Populated with values found in models-repos.php config file.
+     * Populated with values found in fclc-models-repos.php config file.
      * Config file example:
      *
      * [
